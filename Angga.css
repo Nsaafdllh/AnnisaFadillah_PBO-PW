@@ -1,0 +1,65 @@
+*{
+    color: rgb(233, 101, 101);
+    text-decoration: none;
+  }
+  
+  body{
+    margin: 0;
+    padding: 0;
+    background-image: url(gambar/c.jpg);
+  }
+  
+  .bungkus{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 0px;
+  }
+  
+  
+  .bungkus h1{
+    font-family: verdana;
+    text-align: center;
+    font-size: 30px;
+  }
+
+
+
+table.tabel-padd{
+  background-color: beige;
+  border-radius: 10px;
+}
+
+  table.tabel-padd tr td{
+    padding: 10px;
+  }
+  
+  .btn{
+    font-family: verdana;
+    font-size: 20px;
+    padding: 10px 20px 10px;
+    cursor: pointer;
+    background-color: rgb(255, 208, 0);
+    border-radius: 10px;
+    font-weight: bold;
+  }
+  .btn:hover{
+    font-family: verdana;
+    font-size: 20px;
+    padding: 10px 20px 10px;
+    cursor: pointer;
+    background-color: rgb(22, 134, 224);
+    border-radius: 10px;
+    transition: 0.2s;
+  }
+
+  img{
+    border-radius: 30px;
+  }
+
+  img:hover{
+    border-radius: 30px;
+    opacity: 80%;
+    transition: 0.3s;
+  }
