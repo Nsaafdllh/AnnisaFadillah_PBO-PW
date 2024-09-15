@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>JavaScript Tutorial</title>
+</head>
+<body>
+    <p id="demo"></p>
+    <script>
+        let cars = ["bmw", "volvo", "honda"];
+
+        // Menampilkan array cars dalam bentuk string
+        document.getElementById("demo").innerHTML = cars;
+
+        // Mengambil elemen pertama dari array cars
+        let bmw = cars[0];
+        document.getElementById("demo").innerHTML = bmw;
+
+        // Mendapatkan panjang array cars
+        let len = cars.length;
+        document.getElementById("demo").innerHTML = len;
+
+        // Mengambil elemen terakhir dari array cars
+        let last = cars[cars.length - 1];
+        document.getElementById("demo").innerHTML = last;
+
+        // Menggunakan metode forEach untuk menampilkan setiap item dalam array cars
+        cars.forEach((item, index, array) => {
+            console.log(item, index);
+        });
+
+        // Mengubah array cars menjadi string dan menampilkannya
+        document.getElementById("demo").innerHTML = cars.toString();
+
+        // Menghapus elemen terakhir dari array cars dan menampilkannya
+        let last1 = cars.pop();
+        document.getElementById("demo").innerHTML = last1;
+
+        // Mendapatkan elemen terakhir yang baru setelah penghapusan
+        let last2 = cars[cars.length - 1];
+        console.log(last2);
+
+        // Menambahkan elemen "Audi" ke akhir array cars
+        cars.push("Audi");
+        document.getElementById("demo").innerHTML = cars;
+    </script>
+</body>
+</html>
