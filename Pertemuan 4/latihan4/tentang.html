@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tugas Pemweb 5</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header -->
+    <div class="navbar-konten">
+        <h1>Data Mahasiswa</h1>
+        <ul>
+            <li><a href="index.html">Beranda</a></li>
+            <li><a href="update.html">Update Data</a></li>
+            <li><a href="tentang.html">Tentang Website</a></li>
+        </ul>
+    </div>
+
+    <!-- About Section -->
+    <section>
+        <h2>Tentang Kami</h2>
+        <p>Kami adalah komunitas yang didedikasikan untuk menyediakan informasi dan dukungan bagi mahasiswa.</p>
+        <p>Di sini, Anda dapat menemukan berbagai sumber daya yang berguna dan informasi terkini mengenai kegiatan mahasiswa.</p>
+        
+        <div class="faq">
+            <h3>Frequently Asked Questions (FAQ)</h3>
+            <div class="faq-item">
+                <strong>Apa itu komunitas mahasiswa?</strong>
+                <div class="faq-answer">Komunitas mahasiswa adalah sekumpulan individu yang berinteraksi dan berkolaborasi untuk saling mendukung dalam pengalaman akademis dan sosial mereka.</div>
+            </div>
+            <div class="faq-item">
+                <strong>Bagaimana cara bergabung?</strong>
+                <div class="faq-answer">Anda dapat bergabung dengan mengisi formulir pendaftaran di situs kami atau langsung menghubungi kami melalui email.</div>
+            </div>
+            <div class="faq-item">
+                <strong>Apa saja kegiatan yang diadakan?</strong>
+                <div class="faq-answer">Kami mengadakan berbagai kegiatan, termasuk seminar, workshop, dan kegiatan sosial untuk meningkatkan keterlibatan mahasiswa.</div>
+            </div>
+            <div class="faq-item">
+                <strong>Siapa yang bisa bergabung?</strong>
+                <div class="faq-answer">Semua mahasiswa dari berbagai latar belakang dapat bergabung dengan komunitas kami.</div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Data Mahasiswa</p>
+    </footer>
+    <script>// Menangani tampilan FAQ
+        const faqItems = document.querySelectorAll('.faq-item');
+        
+        faqItems.forEach(item => {
+            item.addEventListener('click', () => {
+                const answer = item.querySelector('.faq-answer');
+                const isVisible = answer.style.display === 'block';
+                answer.style.display = isVisible ? 'none' : 'block';
+            });
+        });</script>
+    <script src="main.js"></script>
+</body>
+</html>
